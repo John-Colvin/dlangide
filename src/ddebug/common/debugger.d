@@ -85,13 +85,13 @@ class DebugThreadList {
                 return t;
         return null;
     }
-    @property int length() { return threads.length; }
+    @property size_t length() { return threads.length; }
     DebugThread opIndex(int index) { return threads[index]; }
 }
 
 class DebugStack {
     DebugFrame[] frames;
-    @property int length() { return frames.length; }
+    @property size_t length() { return frames.length; }
     DebugFrame opIndex(int index) { return frames[index]; }
 }
 
